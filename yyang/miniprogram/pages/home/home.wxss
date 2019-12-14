@@ -1,0 +1,117 @@
+
+.hbgtop{
+  width:100%;
+  height:80rpx;
+  background:red;
+  text-align: center;
+  line-height:80rpx;
+  position:fixed;
+  top:0%;
+  left:0%;
+}
+.textboth{
+  font-family:"mv boli",华文彩云;
+}
+.tubiao{
+  position:absolute;
+  top:30%;
+  right:5%;
+}
+/* dao */
+.nav{
+  background:#fff;
+  width:90%;
+  height:200rpx;
+  border-radius:9rpx;
+  margin:0 auto;
+  display:flex;
+  justify-content: center;
+  margin-top:100rpx;
+} 
+.nava{
+   display:flex;
+   justify-content: space-around;
+    align-items:center;
+    padding:19rpx;
+}
+.navaright{
+  width:30%;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.ma{
+  margin-top:10rpx;
+}
+.shushan{
+  border-left:1px solid #ddd;
+  height:80rpx;
+}
+
+/*  */
+.navb{
+  width:90%;
+  height:150rpx;
+  background:#fff;
+  margin:0 auto;
+  border-radius: 9rpx;
+  margin-top:30rpx;
+}
+.navbb{
+ margin-top:30rpx;
+  position:relative;
+}
+.navb::before{
+  content:"";
+  display:table;
+}
+.Stop{
+ width:90%;
+ height:70rpx;
+ text-align: center;
+ border-radius:50rpx;
+ background:#ddd;
+ font-size:30rpx;
+ margin:0 auto ;
+ position:relative;
+}
+.navshou{
+  position:absolute;
+  top:29%;left:40%;
+}
+/* navc*/
+.navcc::before{
+  content:"";
+  display:table;
+}
+.navc{
+  width:90%;
+  background:#fff;
+  border-radius: 9rpx;
+  height:800rpx;
+  margin:30rpx auto 0;
+}
+
+.myVideo{ 
+  margin-top:30rpx;
+  width:100%;
+  height: calc(9 * 750rpx / 16);
+  background-color: #fff;
+}
+.controls{
+  width:90%;
+  position:absolute;
+  z-index:1; 
+  /* background-color: #fff;     */
+   height: calc(9 * 750rpx / 16); 
+  margin-top:-430rpx;
+}
+.play{ 
+    position:absolute;
+    left:50%;
+    margin-top:-300rpx;
+    margin-left:-80rpx;    
+}
+.coverimage{
+  width:95%;
+}

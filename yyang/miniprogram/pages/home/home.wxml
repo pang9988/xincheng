@@ -1,0 +1,66 @@
+<view class="hbgtop">
+<view class="textboth">
+  一家有温度的社区电商
+  <van-icon class="tubiao" name="send-gift-o"/>
+</view>
+</view>
+<view style="margin-top:80rpx;"></view>
+<!-- 头 -->
+<view class="nav">
+<view class="nava">
+  <view style="width:15%">
+  <image style="width:100rpx;height:100rpx;border-radius: 9rpx;" src="{{hl}}"></image>
+  </view>
+  <view style="width:48%; margin-left:6rpx;">
+   <view class="van-ellipsis font30">南海邓同廉江佬哇你妹的大爷的</view>
+   <view class="font25 ma">兴盛你我他, 优选人人夸</view>
+  </view>
+  <view class="shushan"></view>
+  <view class="navaright">
+    <view >
+     <text style="color:green">137</text>
+     <view class="font25">粉丝数</view>
+    </view>
+    <view>
+     <text style="color:red">1370</text>
+     <view class="font25">购买指数</view>
+    </view>
+  </view>
+</view>
+</view>
+<!-- 搜索框 -->
+<view class="navb">
+ <view class="navbb">
+     <input type="text"  class="Stop" placeholder="搜索"></input>
+     <van-icon class="navshou" name="search" />
+ </view>
+</view>
+<!-- 商品 -->
+<view class="navc">
+  <view class="navcc">
+    <view style="text-align:center;margin-top:20rpx;">本商品由伟燕坐垫厂专供</view>
+     <view style="text-align:center;width:95%;margin:0 auto;" >
+         <view  class="video">
+    <video id="myVideo" class="myVideo" src="{{shipi}}" custom-cache="{{false}}">
+    </video>
+    <cover-view class="controls" style="display:{{tab_image}};">
+    <cover-image class="coverimage" src="./../../images/tu/2.jpg" />
+    </cover-view>
+    <cover-view class="play" style="display:{{tab_image}};z-index:200;">
+    <cover-image bindtap="bindplay" src="./../../images/tu/pyhi.png" style="width:160rpx;" />
+    </cover-view>
+</view>
+     </view>
+     <!-- 标题 -->
+     <view>
+     <view>
+     <view>所是呆中中百是枯叶 森罗万象棒喝 枯叶</view>
+     <view>788W</view>
+     </view>
+     <view>
+       <text>5w</text>
+       <text>关注人数</text>
+     </view>
+     </view>
+  </view>
+</view>
