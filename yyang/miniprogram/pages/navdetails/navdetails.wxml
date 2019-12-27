@@ -1,0 +1,13 @@
+<view class='view-page'>
+  <navbar page-name="商品详情"></navbar>
+  <view class='page-content'>
+    <!--这里放页面的内容-->
+  <view class='detailTop'> 
+  <swiper autoplay='true'  circular='true' class='homeCar1' interval="3500"  indicator-dots="true">
+    <swiper-item wx:for="{{deyeData}}" wx:key="index">
+      <image  class="imglu" src='{{item.img}}'></image>
+    </swiper-item>
+  </swiper>
+  </view>
+  </view>
+</view>

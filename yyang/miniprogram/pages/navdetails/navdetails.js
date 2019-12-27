@@ -1,11 +1,15 @@
-// pages/wode/wode.js
+// pages/navdetails/navdetails.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    deyeData: [
+      { img: "./../../images/tu/0.jpg" },
+      { img: "./../../images/tu/1.jpg" },
+      { img: "./../../images/tu/2.jpg" }
+    ],
   },
 
   /**

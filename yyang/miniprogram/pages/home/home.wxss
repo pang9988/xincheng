@@ -8,9 +8,11 @@
   position:fixed;
   top:0%;
   left:0%;
+  z-index:10;
 }
 .textboth{
-  font-family:"mv boli",华文彩云;
+  font-family:华文行楷;
+  color:#fff;
 }
 .tubiao{
   position:absolute;
@@ -21,12 +23,12 @@
 .nav{
   background:#fff;
   width:90%;
-  height:200rpx;
+  height:160rpx;
   border-radius:9rpx;
   margin:0 auto;
   display:flex;
   justify-content: center;
-  margin-top:100rpx;
+  margin-top:10rpx;
 } 
 .nava{
    display:flex;
@@ -51,11 +53,11 @@
 /*  */
 .navb{
   width:90%;
-  height:150rpx;
+  height:130rpx;
   background:#fff;
   margin:0 auto;
   border-radius: 9rpx;
-  margin-top:30rpx;
+  margin-top:20rpx;
 }
 .navbb{
  margin-top:30rpx;
@@ -88,8 +90,8 @@
   width:90%;
   background:#fff;
   border-radius: 9rpx;
-  height:800rpx;
-  margin:30rpx auto 0;
+  height:950rpx;
+  margin:20rpx auto 0;
 }
 
 .myVideo{ 
@@ -97,6 +99,20 @@
   width:100%;
   height: calc(9 * 750rpx / 16);
   background-color: #fff;
+  position:relative;
+}
+/*  */
+.tuleftxia{
+  width:50%;
+  height:50rpx;
+  border-top-right-radius:90rpx;
+  position:absolute;
+  bottom:0%;
+  left:-5%;
+  color:#fff;
+  background:rgba(0,0,0,0.5);
+  font-size:27rpx;
+  line-height:50rpx;
 }
 .controls{
   width:90%;
@@ -115,3 +131,105 @@
 .coverimage{
   width:95%;
 }
+/*  */
+.navad{
+  width:100%;
+  height:300rpx;
+    padding:19rpx;
+}
+.navd{
+    display:flex;
+  justify-content: space-between;
+
+}
+.navdd{
+  width:75%;
+}
+.navddd{
+  width:20%;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+}
+/* 时间 */
+.nave{
+  width:100%;
+  display:flex;
+  justify-content: space-between; 
+    margin-top:15rpx; 
+}
+.navae{
+  display:flex;
+  flex-direction:column;
+}
+.font25orange{margin-bottom:15rpx;}
+button.navfe{
+  margin-top:50rpx;
+   width:70%;
+   height:70rpx;
+   border-radius:40rpx;
+}
+button.navff{
+  margin-top:50rpx;
+   width:80%;
+   height:50rpx;
+   border-radius:40rpx;
+   background:red;
+   color:#fff;
+   font-size:30rpx;
+}
+.rmb{
+  font-size:50rpx;
+}
+.navbe{
+  margin-top:4rpx;
+}
+.rmbs{
+  text-decoration:line-through;
+  color:#666;
+  margin-left:9rpx;
+}
+/* 买的人 */
+.navaf{
+  width:100%;
+  height:90rpx;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  position:relative;
+ 
+}
+
+.navaff image{
+  width:50rpx;
+  height:50rpx;
+  border-radius:50%; 
+  border:1px solid #fff;
+}
+
+.navaff .img1{
+  position:absolute;
+  top:20%;
+  left:1%;
+}
+.navaff .img2{
+  position:absolute;
+  top:20%;
+  left:7%;
+}
+.navaff .img3{
+  position:absolute;
+  top:20%;
+  left:13%;
+}
+.navaff .img4{
+  position:absolute;
+  top:20%;
+  left:19%;
+}
+.navaff .img5{
+  position:absolute;
+  top:20%;
+  left:25%;
+}
+/*  */

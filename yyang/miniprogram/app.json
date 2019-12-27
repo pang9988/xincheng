@@ -1,15 +1,17 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/gouwuche/gouwuche",
-    "pages/wode/wode"
+    "pages/navgouwuche/navgouwuche",
+    "pages/navwode/navwode",
+    "pages/navdetails/navdetails"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#f00",
-    "navigationBarTitleText": "兴盛优选",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "white",
+    "navigationStyle":"custom",
+    "enablePullDownRefresh":true
   },
   "tabBar": {
     "list": [
@@ -20,13 +22,13 @@
         "selectedIconPath": "/images/home1.png"
       },
       {
-        "pagePath": "pages/gouwuche/gouwuche",
+        "pagePath": "pages/navgouwuche/navgouwuche",
         "text": "购物车",
         "iconPath": "/images/shopping2.png",
         "selectedIconPath": "/images/shopping1.png"
       },
       {
-        "pagePath": "pages/wode/wode",
+        "pagePath": "pages/navwode/navwode",
         "text": "我的",
         "iconPath": "/images/my2.png",
         "selectedIconPath": "/images/my1.png"

@@ -1,8 +1,6 @@
 /* @import'@vant/weapp/common/index.wxss'; */
 @import"./style/index.wxss";
-page{
-  background:#ddd;
-}
+
 view,text{
   box-sizing:border-box !important;
 }
@@ -13,7 +11,47 @@ view,text{
   font-size:25rpx;
   color:#666;
 }
+.font25orange{
+  font-size:25rpx;
+  color:orange;
+}
+.font25red{
+  font-size:25rpx;
+  color:red;
+}
+.font28000{
+  font-size:28rpx;
+}
+.colorred{color:red}
 
+
+
+page {
+  height: 100%;
+ background:#ddd;
+
+  -webkit-font-smoothing: antialiased;
+  font-family: 'PingFang SC',
+                 Helvetica,
+                 'STHeiti STXihei',
+                 'Microsoft YaHei',
+                 Tohoma,
+                 Arial,
+                 sans-serif;
+}
+
+.view-page {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.view-page .page-content {
+  flex: 1;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
 
 
 /* 

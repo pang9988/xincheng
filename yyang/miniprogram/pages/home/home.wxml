@@ -1,66 +1,116 @@
-<view class="hbgtop">
-<view class="textboth">
-  一家有温度的社区电商
-  <van-icon class="tubiao" name="send-gift-o"/>
+<view class='view-page'>
+  <image src="./../../images/yt/22.png" style="width:100%;height:100%;" mode="widthFix"></image>
+  <view class='page-content'>
+    <!--这里放页面的内容-->
+
+    <view class="nav">
+      <view class="nava">
+        <view style="width:15%">
+          <image style="width:100rpx;height:100rpx;border-radius: 9rpx;" src="{{hl}}"></image>
+        </view>
+        <view style="width:48%; margin-left:6rpx;">
+          <view class="van-ellipsis font30">南海邓同廉江佬哇你妹的大爷的</view>
+          <view class="font25 ma">兴盛你我他, 优选人人夸</view>
+        </view>
+        <!-- 线 -->
+        <view class="shushan"></view>
+        <view class="navaright">
+          <view>
+            <text style="color:green">137</text>
+            <view class="font25">粉丝数</view>
+          </view>
+          <view>
+            <text style="color:red">1370</text>
+            <view class="font25">购买指数</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 搜索框 -->
+    <view class="navb">
+      <view class="navbb">
+        <input type="text" class="Stop" placeholder="搜索"></input>
+        <van-icon class="navshou" name="search" />
+      </view>
+    </view>
+    <!-- 商品 -->
+    <!-- 循环的地方  -->
+    <view class="navc" wx:for="{{paohui}}" wx:key="index">
+      <view class="navcc">
+        <view style="text-align:center;margin-top:20rpx;">{{item.hometext}}</view>
+        <view style="text-align:center;width:95%;margin:0 auto;">
+          <view class="video">
+            <!-- <video id="myVideo" class="myVideo" src="{{shipi}}" custom-cache="{{false}}">
+        </video> -->
+            <image class="myVideo" src="{{item.homeimg}}">
+              <view class="tuleftxia">力气大点,喜欢后入</view>
+            </image>
+
+            <!-- <cover-view class="controls" style="display:{{tab_image}};">
+          <cover-image class="coverimage" src="{{item.homeimg}}" />
+        </cover-view> -->
+            <!-- <cover-view class="play" style="display:{{tab_image}};z-index:200;">
+          <cover-image bindtap="bindplay" src="{{ksfm}}" style="width:160rpx;" />
+        </cover-view> -->
+          </view>
+        </view>
+        <!-- 标题 -->
+        <view class="navad">
+          <view class="navd">
+            <view class="navdd">
+              <view class="van-ellipsis" style="font-size:28rpx;margin-bottom:15rpx;">{{item.homeT1}}</view>
+              <view style="font-size:28rpx;">{{item.homeT2}}</view>
+            </view>
+            <view class="shushan"></view>
+            <view class="navddd">
+              <text class="font25orange">{{item.guangzuren}}w</text>
+              <view class="font25">关注人数</view>
+            </view>
+          </view>
+          <!--  -->
+          <view style="border:1px solid #ddd;width:100%;margin-top:19rpx;"></view>
+          <view class="nave">
+            <view class="navae">
+              <view class="font25orange">预售时间:12月{{item.homedate1}}日</view>
+              <view class="font25orange">提货时间:12月{{item.homedate2}}日</view>
+              <view class="navbe">
+                <text class="colorred">¥ <text class="rmb">{{item.price}}</text></text>
+                <text class="rmbs">¥ {{item.price1}}</text>
+              </view>
+            </view>
+            <view class="navce">
+              <view class="navde font28000">今日已售
+                <text class="colorred">{{item.yishou}}</text>份/限量
+                <text>{{item.sling}}份</text>
+              </view>
+              <button wx:if="{{che==1}}" class="navfe">抢光了</button>
+              <button wx:elif="{{che==0}}" class="navff">加入购物车</button>
+            </view>
+          </view>
+
+        </view>
+        <view style="border-bottom:1px solid red; width:100%;margin-top:30rpx;"></view>
+
+        <!-- 时间 -->
+        <view class="navaf">
+          <view class="navaff">
+            <image class="img1" src="./../../images/tu/2.jpg"></image>
+            <image class="img2" src="./../../images/tu/2.jpg"></image>
+            <image class="img3" src="./../../images/tu/2.jpg"></image>
+            <image class="img4" src="./../../images/tu/2.jpg"></image>
+            <image class="img5" src="./../../images/tu/2.jpg"></image>
+            <text style="margin-left:226rpx;">等购买了此商品</text>
+          </view>
+          <!-- 箭头 -->
+          <view>
+            <van-icon name="arrow" />
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+
+  </view>
 </view>
-</view>
-<view style="margin-top:80rpx;"></view>
 <!-- 头 -->
-<view class="nav">
-<view class="nava">
-  <view style="width:15%">
-  <image style="width:100rpx;height:100rpx;border-radius: 9rpx;" src="{{hl}}"></image>
-  </view>
-  <view style="width:48%; margin-left:6rpx;">
-   <view class="van-ellipsis font30">南海邓同廉江佬哇你妹的大爷的</view>
-   <view class="font25 ma">兴盛你我他, 优选人人夸</view>
-  </view>
-  <view class="shushan"></view>
-  <view class="navaright">
-    <view >
-     <text style="color:green">137</text>
-     <view class="font25">粉丝数</view>
-    </view>
-    <view>
-     <text style="color:red">1370</text>
-     <view class="font25">购买指数</view>
-    </view>
-  </view>
-</view>
-</view>
-<!-- 搜索框 -->
-<view class="navb">
- <view class="navbb">
-     <input type="text"  class="Stop" placeholder="搜索"></input>
-     <van-icon class="navshou" name="search" />
- </view>
-</view>
-<!-- 商品 -->
-<view class="navc">
-  <view class="navcc">
-    <view style="text-align:center;margin-top:20rpx;">本商品由伟燕坐垫厂专供</view>
-     <view style="text-align:center;width:95%;margin:0 auto;" >
-         <view  class="video">
-    <video id="myVideo" class="myVideo" src="{{shipi}}" custom-cache="{{false}}">
-    </video>
-    <cover-view class="controls" style="display:{{tab_image}};">
-    <cover-image class="coverimage" src="./../../images/tu/2.jpg" />
-    </cover-view>
-    <cover-view class="play" style="display:{{tab_image}};z-index:200;">
-    <cover-image bindtap="bindplay" src="./../../images/tu/pyhi.png" style="width:160rpx;" />
-    </cover-view>
-</view>
-     </view>
-     <!-- 标题 -->
-     <view>
-     <view>
-     <view>所是呆中中百是枯叶 森罗万象棒喝 枯叶</view>
-     <view>788W</view>
-     </view>
-     <view>
-       <text>5w</text>
-       <text>关注人数</text>
-     </view>
-     </view>
-  </view>
-</view>

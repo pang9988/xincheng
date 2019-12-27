@@ -1,0 +1,17 @@
+/*轮播图*/
+.detailTop{
+  width:100%;
+  /* height:100%; */
+    display:flex;
+    justify-content:center;
+}
+ .homeCar1{
+   width:100%;
+   height:400rpx;
+   }
+  .homeCar1 .imglu{
+    width:100%;
+    height:400rpx;
+    display:block;
+     border-radius:19rpx;
+     }
